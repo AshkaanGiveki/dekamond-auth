@@ -1,6 +1,6 @@
 Live demo available at: https://dekamond-auth.vercel.app
 
-# Decamond Auth Task
+# Dekamond Auth Task
 
 A simple authentication demo using **Next.js (App Router)**, **TypeScript**, **SCSS Modules**, and localStorage — built for Decamond's technical team.
 
