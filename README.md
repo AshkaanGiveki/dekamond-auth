@@ -1,3 +1,5 @@
+Live demo available at: https://dekamond-auth.vercel.app
+
 # Decamond Auth Task
 
 A simple authentication demo using **Next.js (App Router)**, **TypeScript**, **SCSS Modules**, and localStorage — built for Decamond's technical team.
@@ -23,7 +25,7 @@ A simple authentication demo using **Next.js (App Router)**, **TypeScript**, **S
 ## 🚀 How to Run Locally
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/decamond-auth-task.git
-cd decamond-auth-task
+git clone https://github.com/AshkaanGiveki/dekamond-auth.git
+cd decamond-auth
 npm install
 npm run dev
