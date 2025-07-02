@@ -1,0 +1,88 @@
+.container {
+
+    .logout {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        opacity: 0.6;
+        cursor: pointer;
+        transition: all ease-in-out 300ms;
+        height: 40px;
+        width: 40px;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .welcomeText {
+        font-size: 2.5rem;
+        font-weight: bold;
+        background: linear-gradient(270deg, #007cf0, #00dfd8, #ff0080, #ff8c00, #007cf0);
+        background-size: 800% 800%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientMove 12s ease infinite;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .loader {
+        --c: no-repeat linear-gradient(orange 0 0);
+        background:
+            var(--c), var(--c), var(--c),
+            var(--c), var(--c), var(--c),
+            var(--c), var(--c), var(--c);
+        background-size: 16px 16px;
+        animation:
+            l32-1 1s infinite,
+            l32-2 1s infinite;
+    }
+      
+
+    
+
+    @keyframes l32-1 {
+
+        0%,
+        100% {
+            width: 45px;
+            height: 45px
+        }
+
+        35%,
+        65% {
+            width: 65px;
+            height: 65px
+        }
+    }
+
+    @keyframes l32-2 {
+
+        0%,
+        40% {
+            background-position: 0 0, 0 50%, 0 100%, 50% 100%, 100% 100%, 100% 50%, 100% 0, 50% 0, 50% 50%
+        }
+
+        60%,
+        100% {
+            background-position: 0 50%, 0 100%, 50% 100%, 100% 100%, 100% 50%, 100% 0, 50% 0, 0 0, 50% 50%
+        }
+    }
+
+}
+
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
