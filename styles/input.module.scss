@@ -1,12 +1,25 @@
 .input {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    // border: 1px solid #ccc;
+    border-radius: 10px;
     font-size: 1rem;
+    background-color: #f3f3f3;
+    outline: none;
+    border: 1px solid transparent;
+    transition: all ease-in-out 300ms;
 
     &.error{
         border: 1px solid rgb(153, 16, 46);
+    }
+
+    &:hover{
+        border: 1px solid #eee;
+        background-color: #f8f8f8;
+    }
+    &:focus{
+        border: 1px solid #ccc;
+        background-color: #f8f8f8;
     }
   }
   

@@ -4,6 +4,8 @@ import Input from '@/components/Input';
 import Button from '@/components/Button';
 import styles from './auth.module.scss';
 import { useRouter } from 'next/navigation';
+import loginIcon from '@/assets/icons/login.png';
+import Image from 'next/image';
 
 export default function AuthPage() {
     const [phone, setPhone] = useState('');
@@ -26,10 +28,13 @@ export default function AuthPage() {
             setError('Error: Failed to connect to server');
         }
     };
+    
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>Login</h1>
+            <Image src={loginIcon} alt='Login' title='Login'/> 
+            <h1 className={styles.title}>Login With Phone Number</h1>
+            <h4 className={styles.description}>Sign into your account just by entering your phone number!</h4>
             <div className={styles.inputContainer}>
                 <Input error={error} value={phone} onChange={setPhone} placeholder="Phone Number" />
             </div>

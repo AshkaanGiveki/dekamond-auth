@@ -1,34 +1,50 @@
-.container{
-    width: 400px;
+.container {
+    width: 500px;
     max-width: 90%;
-    background-color: transparent;
+    background-color: #fff9;
     height: max-content;
     padding: 60px;
-    border-radius: 5px;
-    
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(3px);
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+    background: linear-gradient(#CBF2FE, #ffffff);
     gap: 20px;
 
-    .inputContainer{
+    >img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .description {
+        text-align: center;
+        color: #777;
+        font-family: ESSC-Light;
+    }
+
+    .inputContainer {
         width: 100%;
     }
 
-    .buttonContainer{
+    .buttonContainer {
         width: 100%;
     }
 
-    .error{
+    .error {
         color: rgb(153, 16, 46);
     }
 }
 
 @media screen and (max-width: 400px) {
-    .container{
+    .container {
         padding: 30px;
     }
 }
+
